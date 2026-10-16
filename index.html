@@ -1,0 +1,679 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sports News Daily | Latest Sports Updates</title>
+
+<meta name="description" content="Read football, basketball and international sports news, analysis and features.">
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #242b36;
+    line-height: 1.8;
+}
+
+header {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: clamp(27px, 6vw, 42px);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #dbe4f3;
+}
+
+nav {
+    background: #d71920;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    padding: 8px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #101d35;
+}
+
+.hero {
+    background: #182d50;
+    color: white;
+    padding: 35px 22px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.hero p {
+    color: #e0e8f5;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+section {
+    scroll-margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.card {
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 18px 0;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card h2,
+.card h3 {
+  color: #142746;
+  line-height: 1.4;
+}
+
+.card p {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+h2 {
+    color: #14294b;
+    line-height: 1.4;
+}
+
+h3 {
+    color: #172d4e;
+    line-height: 1.5;
+}
+
+.category {
+    color: #d71920;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date {
+    color: #777;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    background: #d71920;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #101d35;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.news-grid .card {
+    margin: 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0 15px;
+    border: 1px solid #ccd2dc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    background: #d71920;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+        padding: 8px 7px;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+    <img src="images/sports-logo.png"
+     alt="Sports News Daily Logo"
+     style="width:150px; height:auto;">
+    <p>Your world of football, basketball and sports</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#football">Football</a>
+    <a href="#basketball">Basketball</a>
+    <a href="#latest">Latest News</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <p>WELCOME TO SPORTS NEWS DAILY</p>
+    <h1 style="color: white;">Your Daily Destination for Sports Stories</h1>
+    <p>
+        Discover match analysis, player stories, team updates
+        and the biggest talking points from the world of sports.
+    </p>
+    <a href="#latest" class="button">Explore Sports News</a>
+</div>
+
+<main class="container">
+
+<!-- HOME SECTION -->
+<section id="home-news">
+    <h2>Top Stories</h2>
+
+    <div class="news-grid">
+
+        <div class="card">
+            <p class="category">Football</p>
+            <h3>The Competition for Football Supremacy</h3>
+            <p>
+                Discover how teamwork, tactical decisions and
+                consistent performances shape the competition
+                between the world's leading football clubs.
+            </p>
+            <a class="button" href="#football">Read Story</a>
+        </div>
+
+        <div class="card">
+            <p class="category">Basketball</p>
+            <h3>The Game of Speed and Skill</h3>
+            <p>
+                Explore the strategies, individual performances
+                and teamwork that make basketball one of the
+                world's most exciting sports.
+            </p>
+            <a class="button" href="#basketball">Read Story</a>
+        </div>
+
+        <div class="card">
+            <p class="category">Sports Analysis</p>
+            <h3>What Makes a Great Athlete?</h3>
+            <p>
+                Learn how discipline, preparation, fitness and
+                mental strength contribute to sporting success.
+            </p>
+            <a class="button" href="#latest">Read Story</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTBALL SECTION -->
+<section id="football">
+    <div class="card">
+        <p class="category">Football News and Analysis</p>
+        <p class="date">Sports Feature</p>
+
+        <h2>Football's Biggest Challenge: Consistency, Teamwork and Success</h2>
+
+        <p>
+            Football remains one of the most popular sports
+            around the world. Millions of supporters follow
+            their favourite teams, discuss tactics and celebrate
+            the moments that make every match memorable.
+        </p>
+
+        <p>
+            From the English Premier League to competitions
+            across Europe, Africa, Asia and the Americas,
+            football provides a stage for talented players,
+            ambitious managers and passionate supporters.
+        </p>
+
+        <h3>Why Consistency Matters</h3>
+
+        <p>
+            Winning a single match can bring excitement, but
+            maintaining strong performances throughout an
+            entire season is a much greater challenge. Clubs
+            must prepare carefully for different opponents,
+            manage player fitness and respond to unexpected
+            setbacks.
+        </p>
+
+        <p>
+            A team may dominate possession without creating
+            enough scoring opportunities. Another team may
+            defend patiently and win through a quick counterattack.
+            These contrasting approaches show that football
+            success depends on more than possession alone.
+        </p>
+
+        <h3>The Importance of Managers</h3>
+
+        <p>
+            Managers influence how teams attack, defend and
+            react under pressure. Their responsibilities include
+            selecting players, planning training sessions,
+            studying opponents and making substitutions.
+        </p>
+
+        <p>
+            Good management also involves communication.
+            Players need to understand their roles and trust
+            their teammates. When everyone works toward the
+            same objective, a team can become more organised
+            and difficult to defeat.
+        </p>
+
+        <h3>Young Players and the Future of Football</h3>
+
+        <p>
+            Young footballers bring energy, creativity and
+            ambition. Developing their abilities requires
+            regular training, guidance from experienced players
+            and opportunities to compete at a high level.
+        </p>
+
+        <p>
+            Youth academies are important because they help
+            players improve their technical skills, tactical
+            understanding and decision-making. Not every
+            promising player becomes a superstar, but proper
+            development gives talented youngsters a stronger
+            foundation for their careers.
+        </p>
+
+        <h3>What Supporters Expect</h3>
+
+        <p>
+            Supporters want to see effort, commitment and
+            progress. They celebrate victories but also expect
+            teams to learn from defeats. Online discussions,
+            match reports and tactical analysis have made it
+            easier for fans to share their opinions.
+        </p>
+
+        <p>
+            Ultimately, football's greatest attraction is its
+            unpredictability. A late goal, an excellent save
+            or a tactical change can transform a match and
+            create memories that supporters remember for years.
+        </p>
+
+        <h3>Football: The Road Ahead</h3>
+
+        <p>
+            As competitions continue, clubs will need to
+            balance ambition with careful planning. Fitness,
+            teamwork, recruitment and tactical flexibility
+            will remain important factors in their progress.
+        </p>
+
+        <p>
+            For supporters, every new fixture brings another
+            opportunity to witness outstanding performances,
+            unexpected results and the drama that makes
+            football such a compelling sport.
+        </p>
+    </div>
+</section>
+
+<!-- BASKETBALL SECTION -->
+<section id="basketball">
+    <div class="card">
+        <p class="category">Basketball News and Features</p>
+
+        <h2>Basketball: Speed, Skill and the Pursuit of Excellence</h2>
+
+        <p>
+            Basketball combines speed, athleticism, coordination
+            and strategic thinking. Teams must move the ball
+            effectively, create scoring opportunities and defend
+            against opponents who are constantly looking for
+            weaknesses.
+        </p>
+
+        <p>
+            From local courts to major professional arenas,
+            basketball attracts players and supporters who
+            appreciate its fast pace and exciting finishes.
+            A game can change quickly, particularly when a
+            team begins scoring consecutive baskets.
+        </p>
+
+        <h3>Teamwork Wins Games</h3>
+
+        <p>
+            Individual talent can make a difference, but
+            successful basketball teams rely on cooperation.
+            Players must communicate, set screens, pass
+            accurately and move into positions where they
+            can help their teammates.
+        </p>
+
+        <p>
+            Good passing can create open shots, while strong
+            defensive communication can prevent opponents
+            from finding easy scoring opportunities. Teams
+            that understand one another often perform better
+            when matches become difficult.
+        </p>
+
+        <h3>Offence and Defence</h3>
+
+        <p>
+            An effective offence requires movement, patience
+            and intelligent decision-making. Players must
+            recognise when to shoot, pass or drive toward
+            the basket. Taking difficult shots too frequently
+            can reduce a team's scoring efficiency.
+        </p>
+
+        <p>
+            Defence is equally important. Players must stay
+            alert, contest shots, protect the basket and
+            compete for rebounds. Strong defensive pressure
+            can force mistakes and create opportunities
+            for fast breaks.
+        </p>
+
+        <h3>Physical Fitness and Preparation</h3>
+
+        <p>
+            Basketball demands repeated bursts of running,
+            jumping and rapid changes of direction. Training
+            programmes often combine conditioning, strength,
+            mobility and technical practice.
+        </p>
+
+        <p>
+            Recovery also matters. Rest, appropriate nutrition
+            and professional medical support help athletes
+            manage the physical demands of competition.
+        </p>
+
+        <h3>The Next Generation</h3>
+
+        <p>
+            Young basketball players can improve by practising
+            their ball handling, shooting technique, footwork
+            and defensive positioning. Learning to make good
+            decisions is just as important as developing
+            physical ability.
+        </p>
+
+        <p>
+            Coaches play a valuable role by helping young
+            athletes understand the game and build confidence.
+            Consistent practice and a willingness to learn
+            can help players make steady progress.
+        </p>
+
+        <h3>Why Fans Love Basketball</h3>
+
+        <p>
+            Basketball offers constant action, dramatic
+            comebacks and exciting individual performances.
+            Close games can remain undecided until the final
+            seconds, keeping supporters engaged throughout.
+        </p>
+
+        <p>
+            As the sport continues to grow internationally,
+            supporters can look forward to more opportunities
+            to follow competitions, discover new players
+            and appreciate the skill required to perform
+            at the highest level.
+        </p>
+    </div>
+</section>
+
+<!-- LATEST NEWS SECTION -->
+<section id="latest">
+    <h2>Latest Sports Features</h2>
+
+    <div class="card">
+        <p class="category">Athletics</p>
+        <h3>How Training Helps Athletes Reach Their Potential</h3>
+
+        <p>
+            Athletic performance is built through preparation,
+            discipline and regular practice. Runners, jumpers
+            and other competitors work to improve their
+            technique, endurance, strength and concentration.
+        </p>
+
+        <p>
+            Training plans must match an athlete's event and
+            individual needs. Recovery is also essential,
+            allowing the body to adapt and helping reduce
+            the risk of overtraining.
+        </p>
+
+        <p>
+            Coaches and sports scientists can help athletes
+            monitor progress and make informed adjustments.
+            Although natural ability can be valuable,
+            dedication and consistent preparation remain
+            important parts of sporting development.
+        </p>
+    </div>
+
+    <div class="card">
+        <p class="category">Sports Business</p>
+        <h3>How Technology Is Changing Modern Sports</h3>
+
+        <p>
+            Technology is increasingly used to analyse
+            performances, monitor training and help officials
+            make decisions. Video analysis allows teams to
+            study movement, identify patterns and prepare
+            more effectively for their opponents.
+        </p>
+
+        <p>
+            Wearable devices can help authorised performance
+            teams monitor certain physical measurements.
+            Video systems and other technologies are also
+            used in some competitions to review important
+            decisions.
+        </p>
+
+        <p>
+            Technology cannot replace every human judgement,
+            but when used appropriately it can provide
+            additional information and support better
+            preparation, analysis and decision-making.
+        </p>
+    </div>
+
+    <div class="card">
+        <p class="category">Fitness and Wellness</p>
+        <h3>The Importance of Recovery in Sport</h3>
+
+        <p>
+            Athletes need more than intense training to
+            perform well. Sleep, balanced nutrition, hydration
+            and appropriate rest all contribute to preparation
+            and recovery.
+        </p>
+
+        <p>
+            Training without sufficient recovery can lead
+            to excessive fatigue and reduce performance.
+            Athletes should work with qualified professionals
+            to develop routines suited to their needs.
+        </p>
+
+        <p>
+            Whether someone competes professionally or
+            exercises for personal enjoyment, balancing
+            activity with recovery can help make training
+            more sustainable.
+        </p>
+    </div>
+
+    <div class="card">
+        <p class="category">Football Analysis</p>
+        <h3>Why Set Pieces Can Change a Football Match</h3>
+
+        <p>
+            Corners, free kicks and penalties create important
+            scoring opportunities. Teams often practise
+            different routines to exploit space and challenge
+            their opponents' defensive organisation.
+        </p>
+
+        <p>
+            Defending set pieces requires concentration,
+            communication and good positioning. A brief
+            lapse can allow an opponent to score, even when
+            the defending team has performed well during
+            open play.
+        </p>
+
+        <p>
+            Because many matches are decided by small
+            margins, effective preparation for set pieces
+            can make a meaningful difference over a season.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="card">
+        <h2>Contact Sports News Daily</h2>
+
+        <p>
+            Have a sports story, suggestion or question?
+            We would like to hear from you.
+        </p>
+
+        <p>
+            For news tips, corrections and general enquiries,
+            contact our editorial team by email.
+        </p>
+
+        <!-- Replace this email with your own email address -->
+        <p>
+            Email:
+            <a href="mailto:yourname@example.com">
+                yourname@example.com
+            </a>
+        </p>
+
+        <p>
+            Please include the subject of your enquiry and
+            any relevant information so our team can
+            understand your message.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h3 style="color:white;">SPORTS NEWS DAILY</h3>
+
+    <p>
+        Your destination for sports stories, features
+        and analysis.
+    </p>
+
+    <p>
+        <a href="#home">Home</a> |
+        <a href="#football">Football</a> |
+        <a href="#basketball">Basketball</a> |
+        <a href="#latest">Latest News</a> |
+        <a href="#contact">Contact</a>
+    </p>
+
+    <p>
+        &copy; 2026 Sports News Daily.
+        All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
+
